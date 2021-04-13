@@ -255,6 +255,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/images\/logo.png" : {
+      "ft" : 32768,
+      "iS" : 4793,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/logo.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/images\/malusi-msomi-Xp__MGsQga8-unsplash.jpg" : {
       "ft" : 16384,
       "iS" : 115045,
