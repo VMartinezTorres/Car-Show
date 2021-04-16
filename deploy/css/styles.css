@@ -365,6 +365,29 @@ ul li {
   list-style: none;
 }
 
+.container-grid {
+  display: grid;
+  grid-template-areas: "header" "hero" "nextvisit" "imggallery" "whatsnew" "footer";
+}
+.container-grid .header {
+  grid-area: header;
+}
+.container-grid .hero {
+  grid-area: hero;
+}
+.container-grid .nextvisit {
+  grid-area: nextvisit;
+}
+.container-grid .imggallery {
+  grid-area: imggallery;
+}
+.container-grid .whatsnew {
+  grid-area: whatsnew;
+}
+.container-grid .footer {
+  grid-area: footer;
+}
+
 .content {
   margin-bottom: 24px;
 }
