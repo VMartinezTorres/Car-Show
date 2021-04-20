@@ -404,12 +404,6 @@ ul li {
     margin-bottom: 32px;
   }
 }
-@media (min-width: 1024px) {
-  .content {
-    background-color: green;
-    margin-bottom: 32px;
-  }
-}
 @media (min-width: 1200px) {
   .content {
     background-color: red;
@@ -439,6 +433,9 @@ p {
 }
 
 /* =============
+    Footer
+============= */
+/* =============
     Header
 ============= */
 /* =============
@@ -452,7 +449,4 @@ p {
 ============= */
 /* =============
     Whatsnew
-============= */
-/* =============
-    Footer
 ============= */

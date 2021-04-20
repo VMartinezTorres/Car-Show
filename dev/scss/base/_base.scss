@@ -68,11 +68,6 @@ ul {
         margin-bottom: 32px;
     }
 
-    @include lg {
-        background-color: green;
-        margin-bottom: 32px;
-    }
-
     @include xl {
         background-color: red;
         margin-bottom: 64px;
