@@ -365,39 +365,54 @@ ul li {
   list-style: none;
 }
 
-.container-grid {
+.content {
   display: grid;
   grid-template-areas: "header" "hero" "nextvisit" "imggallery" "whatsnew" "footer";
+  margin-bottom: 24px;
 }
-.container-grid .header {
+.content .header {
   grid-area: header;
 }
-.container-grid .hero {
+.content .hero {
   grid-area: hero;
 }
-.container-grid .nextvisit {
+.content .nextvisit {
   grid-area: nextvisit;
 }
-.container-grid .imggallery {
+.content .imggallery {
   grid-area: imggallery;
 }
-.container-grid .whatsnew {
+.content .whatsnew {
   grid-area: whatsnew;
 }
-.container-grid .footer {
-  grid-area: footer;
+.content .whatsnew section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". whatsnew .";
 }
-
-.content {
-  margin-bottom: 24px;
+.content .whatsnew section ul {
+  grid-area: whatsnew;
+  display: grid;
+  grid-gap: 20px;
+}
+.content .footer {
+  grid-area: footer;
 }
 @media (min-width: 768px) {
   .content {
+    background-color: blue;
+    margin-bottom: 32px;
+  }
+}
+@media (min-width: 1024px) {
+  .content {
+    background-color: green;
     margin-bottom: 32px;
   }
 }
 @media (min-width: 1200px) {
   .content {
+    background-color: red;
     margin-bottom: 64px;
   }
 }
@@ -422,3 +437,22 @@ p {
 .section-title {
   font-weight: 300;
 }
+
+/* =============
+    Header
+============= */
+/* =============
+    Hero
+============= */
+/* =============
+   Imggallery
+============= */
+/* =============
+    Nextvisit
+============= */
+/* =============
+    Whatsnew
+============= */
+/* =============
+    Footer
+============= */

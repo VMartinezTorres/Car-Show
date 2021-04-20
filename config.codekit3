@@ -412,52 +412,52 @@
       "oAP" : "\/design\/structure-tags.sketch",
       "oF" : 0
     },
-    "\/dev\/_footer.kit" : {
+    "\/dev\/content\/_footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/_footer.html",
+      "oAP" : "\/dev\/content\/_footer.html",
       "oF" : 0
     },
-    "\/dev\/_header.kit" : {
+    "\/dev\/content\/_header.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/_header.html",
+      "oAP" : "\/dev\/content\/_header.html",
       "oF" : 0
     },
-    "\/dev\/_hero.kit" : {
+    "\/dev\/content\/_hero.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/_hero.html",
+      "oAP" : "\/dev\/content\/_hero.html",
       "oF" : 0
     },
-    "\/dev\/_imggallery.kit" : {
+    "\/dev\/content\/_imggallery.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/_imggallery.html",
+      "oAP" : "\/dev\/content\/_imggallery.html",
       "oF" : 0
     },
-    "\/dev\/_nextvisit.kit" : {
+    "\/dev\/content\/_nextvisit.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/_nextvisit.html",
+      "oAP" : "\/dev\/content\/_nextvisit.html",
       "oF" : 0
     },
-    "\/dev\/_whatsnew.kit" : {
+    "\/dev\/content\/_whatsnew.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/_whatsnew.html",
+      "oAP" : "\/dev\/content\/_whatsnew.html",
       "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
@@ -630,6 +630,90 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/layout\/_header.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_footer.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_footer.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_header.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_header.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_hero.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_imggallery.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_imggallery.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_nextvisit.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_nextvisit.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_whatsnew.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_whatsnew.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

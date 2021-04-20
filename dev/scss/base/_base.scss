@@ -15,7 +15,8 @@ ul {
     }
 }
 
-.container-grid {
+
+.content {
     display: grid;
     grid-template-areas:
         "header"
@@ -43,21 +44,38 @@ ul {
 
      .whatsnew {
         grid-area: whatsnew;
+        section {
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". whatsnew .";
+            
+            ul {
+                grid-area: whatsnew;
+                display: grid;
+                grid-gap: 20px;
+            }
+        }
      }
 
     .footer {
         grid-area: footer;
     }
-}
-
-.content {
+    
     margin-bottom: 24px;
 
     @include md {
+        background-color: blue;
+        margin-bottom: 32px;
+    }
+
+    @include lg {
+        background-color: green;
         margin-bottom: 32px;
     }
 
     @include xl {
+        background-color: red;
         margin-bottom: 64px;
     }
 }
+

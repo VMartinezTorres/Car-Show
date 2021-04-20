@@ -8,3 +8,11 @@
 @import "base/_normalize";
 @import "base/_base";
 @import "base/_typography";
+
+// Section Styles
+@import "sections/footer";
+@import "sections/header";
+@import "sections/hero";
+@import "sections/imggallery";
+@import "sections/nextvisit";
+@import "sections/whatsnew";
