@@ -381,7 +381,18 @@ main .hero ul {
 }
 main .hero a {
   display: grid;
-  grid-template-columns: 500px 100px;
+  grid-template-columns: 300px auto;
+}
+@media (min-width: 768px) {
+  main .hero ul {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  main .hero ul .WTB {
+    grid-column: span 5;
+  }
+  main .hero ul .location {
+    grid-column: span 7;
+  }
 }
 main .nextvisit {
   grid-area: nextvisit;
@@ -391,6 +402,21 @@ main .nextvisit ul {
 }
 main .imggallery {
   grid-area: imggallery;
+}
+main .imggallery ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  main .imggallery ul {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  main .imggallery .blue {
+    grid-column: span 6;
+  }
+  main .imggallery .white {
+    grid-column: span 6;
+  }
 }
 main .whatsnew {
   grid-area: whatsnew;

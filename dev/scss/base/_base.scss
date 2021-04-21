@@ -38,7 +38,20 @@ main {
 
     a {
       display: grid;
-      grid-template-columns: 500px 100px;
+      grid-template-columns: 300px auto;
+    }
+
+    @include md {
+        ul {
+            grid-template-columns: repeat(12, 1fr);
+
+            .WTB {
+                grid-column: span 5;
+            }
+            .location {
+                grid-column: span 7;
+            }
+        }
     }
   }
 
@@ -52,6 +65,23 @@ main {
 
   .imggallery {
     grid-area: imggallery;
+
+    ul {
+        display: grid;
+    }
+
+    @include md{
+        ul {
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+        }
+        .blue {
+            grid-column: span 6;
+        }
+        .white {
+            grid-column: span 6;
+        }
+    }
   }
 
   .whatsnew {
