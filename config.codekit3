@@ -4,7 +4,7 @@
     {
       "name" : "Process All Remaining Files and Folders",
       "stepType" : 1,
-      "uuidString" : "301077FD-6587-4DAE-808A-231B715466F3"
+      "uuidString" : "657959B0-3088-499D-99A3-6AF92BB1786F"
     }
   ],
   "creatorBuild" : "34127",
@@ -75,13 +75,13 @@
     },
     "\/deploy\/images\/campbell-3ZUsNJhi_Ik-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 434063,
+      "iS" : 405105,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/campbell-3ZUsNJhi_Ik-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -101,26 +101,26 @@
     },
     "\/deploy\/images\/conor-samuel-aIbR-deTiWY-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 547077,
+      "iS" : 506508,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/conor-samuel-aIbR-deTiWY-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/images\/craventure-media--il0HyQprwE-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 89621,
+      "iS" : 68265,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/craventure-media--il0HyQprwE-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -146,20 +146,20 @@
       "oAP" : "\/deploy\/images\/fernando-marques-dzZV4PpQ-NI-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/images\/fernando-marques-MdXKvBzHE_Y-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 90725,
+      "iS" : 70195,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/fernando-marques-MdXKvBzHE_Y-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -192,52 +192,52 @@
     },
     "\/deploy\/images\/joren-goessens-ZGo9PoyPFMo-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 42688,
+      "iS" : 24298,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/joren-goessens-ZGo9PoyPFMo-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/images\/josh-berquist-PljkQ_KSbMc-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 158195,
+      "iS" : 134647,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/josh-berquist-PljkQ_KSbMc-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/images\/joshua-koblin-eqW1MPinEV4-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 80233,
+      "iS" : 61963,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/joshua-koblin-eqW1MPinEV4-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/images\/kevin-bhagat-3cLpiv8h5so-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 101057,
+      "iS" : 80902,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/kevin-bhagat-3cLpiv8h5so-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -270,26 +270,26 @@
     },
     "\/deploy\/images\/malusi-msomi-Xp__MGsQga8-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 115045,
+      "iS" : 90324,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/malusi-msomi-Xp__MGsQga8-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
     },
     "\/deploy\/images\/michal-mokrzycki-AD6aJvE5yKE-unsplash.jpg" : {
       "ft" : 16384,
-      "iS" : 311240,
+      "iS" : 280684,
       "jF" : 0,
       "oA" : 0,
       "oAP" : "\/deploy\/images\/michal-mokrzycki-AD6aJvE5yKE-unsplash.jpg",
       "oF" : 0,
       "oIPL" : 0,
-      "opt" : 1,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -481,8 +481,8 @@
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/index.html",
-      "oF" : 2
+      "oAP" : "\/dev\/index.html",
+      "oF" : 0
     },
     "\/dev\/js\/scripts.js" : {
       "bF" : 0,
@@ -490,8 +490,8 @@
       "ma" : 0,
       "mi" : 1,
       "oA" : 0,
-      "oAP" : "\/deploy\/js\/scripts-min.js",
-      "oF" : 2,
+      "oAP" : "\/dev\/js\/scripts-min.js",
+      "oF" : 0,
       "sC" : 3,
       "tS" : 0
     },
@@ -727,8 +727,8 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/css\/styles.css",
-      "oF" : 3,
+      "oAP" : "\/dev\/scss\/styles.css",
+      "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
@@ -760,12 +760,11 @@
 
   },
   "projectAttributes" : {
-    "creationDate" : 638898965.76008201,
+    "creationDate" : 640652346.01443195,
     "displayValue" : "Car-Show",
     "displayValueWasSetByUser" : 0,
-    "iconImageName" : "brackets-koamaru",
-    "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 639665914.90582001
+    "iconImageName" : "brackets-pale",
+    "iconImageWasSetByUser" : 0
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,

@@ -365,47 +365,47 @@ ul li {
   list-style: none;
 }
 
-.content {
+main {
   display: grid;
   grid-template-areas: "header" "hero" "nextvisit" "imggallery" "whatsnew" "footer";
   margin-bottom: 24px;
 }
-.content .header {
+main .header {
   grid-area: header;
 }
-.content .hero {
+main .hero {
   grid-area: hero;
 }
-.content .nextvisit {
+main .hero ul {
+  display: grid;
+}
+main .hero a {
+  display: grid;
+  grid-template-columns: 500px 100px;
+}
+main .nextvisit {
   grid-area: nextvisit;
 }
-.content .imggallery {
+main .nextvisit ul {
+  display: grid;
+}
+main .imggallery {
   grid-area: imggallery;
 }
-.content .whatsnew {
+main .whatsnew {
   grid-area: whatsnew;
 }
-.content .whatsnew section {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". whatsnew .";
-}
-.content .whatsnew section ul {
-  grid-area: whatsnew;
-  display: grid;
-  grid-gap: 20px;
-}
-.content .footer {
+main #footer {
   grid-area: footer;
 }
 @media (min-width: 768px) {
-  .content {
+  main {
     background-color: lightgray;
     margin-bottom: 32px;
   }
 }
 @media (min-width: 1200px) {
-  .content {
+  main {
     background-color: lightblue;
     margin-bottom: 64px;
   }

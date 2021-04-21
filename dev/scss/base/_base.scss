@@ -2,75 +2,75 @@
     Base
 ============= */
 figure {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 
-    li {
-        list-style: none;
-    }
+  li {
+    list-style: none;
+  }
 }
 
+main {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "hero"
+    "nextvisit"
+    "imggallery"
+    "whatsnew"
+    "footer";
 
-.content {
-    display: grid;
-    grid-template-areas:
-        "header"
-        "hero"
-        "nextvisit"
-        "imggallery"
-        "whatsnew"
-        "footer";
-    
-     .header {
-        grid-area: header;
-      }
+  .header {
+    grid-area: header;
+  }
 
-     .hero {
-        grid-area: hero;
-     }
+  .hero {
+    grid-area: hero;
 
-     .nextvisit {
-        grid-area: nextvisit;
-     }
-
-     .imggallery {
-        grid-area: imggallery;
-      }
-
-     .whatsnew {
-        grid-area: whatsnew;
-        section {
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". whatsnew .";
-            
-            ul {
-                grid-area: whatsnew;
-                display: grid;
-                grid-gap: 20px;
-            }
-        }
-     }
-
-    .footer {
-        grid-area: footer;
-    }
-    
-    margin-bottom: 24px;
-
-    @include md {
-        background-color: blue;
-        margin-bottom: 32px;
+    ul {
+      display: grid;
     }
 
-    @include xl {
-        background-color: red;
-        margin-bottom: 64px;
+    a {
+      display: grid;
+      grid-template-columns: 500px 100px;
     }
+  }
+
+  .nextvisit {
+    grid-area: nextvisit;
+
+    ul {
+      display: grid;
+    }
+  }
+
+  .imggallery {
+    grid-area: imggallery;
+  }
+
+  .whatsnew {
+    grid-area: whatsnew;
+  }
+
+  #footer {
+    grid-area: footer;
+  }
+
+  margin-bottom: 24px;
+
+  @include md {
+    background-color: lightgray;
+    margin-bottom: 32px;
+  }
+
+  @include xl {
+    background-color: lightblue;
+    margin-bottom: 64px;
+  }
 }
-
