@@ -459,20 +459,80 @@ p {
 }
 
 /* =============
-    Footer
-============= */
-/* =============
     Header
 ============= */
+.header {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+.header > div {
+  grid-area: header;
+}
+
+/* =============
+    Footer
+============= */
+.footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+.footer > div {
+  grid-area: footer;
+}
+
 /* =============
     Hero
 ============= */
+.hero img {
+  width: 100%;
+}
+.hero ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero .";
+}
+.hero ul li a {
+  grid-area: hero;
+}
+
 /* =============
    Imggallery
 ============= */
+.imggallery ul {
+  display: grid;
+}
+.imggallery ul li img {
+  width: 100%;
+}
+.imggallery ul .IG3 {
+  display: none;
+}
+
 /* =============
     Nextvisit
 ============= */
+.nextvisit ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". nextvisit .";
+}
+.nextvisit ul li > div {
+  grid-area: nextvisit;
+}
+
 /* =============
     Whatsnew
 ============= */
+.whatsnew ul li img {
+  width: 100%;
+}
+.whatsnew ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". whatsnew .";
+}
+.whatsnew ul li section > div {
+  grid-area: whatsnew;
+}

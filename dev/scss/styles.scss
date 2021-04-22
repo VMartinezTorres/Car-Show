@@ -9,9 +9,11 @@
 @import "base/_base";
 @import "base/_typography";
 
+// Layout styles
+@import "layout/header";
+@import "layout/footer";
+
 // Section Styles
-@import "sections/footer";
-@import "sections/header";
 @import "sections/hero";
 @import "sections/imggallery";
 @import "sections/nextvisit";

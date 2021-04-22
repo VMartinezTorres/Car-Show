@@ -1,3 +1,17 @@
 /* =============
     Nextvisit
 ============= */
+.nextvisit{
+    
+    ul{
+       li{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". nextvisit .";
+          
+        >div{
+            grid-area: nextvisit;
+           }
+       }
+    }
+}
