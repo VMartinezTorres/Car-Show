@@ -57,10 +57,17 @@ main {
 
   .nextvisit {
     grid-area: nextvisit;
+  }
 
     ul {
       display: grid;
     }
+  
+    @include md {
+      ul {
+        grid-template-columns: repeat(12, 1fr);
+        grid-gap: 20px;
+      }
   }
 
   .imggallery {
@@ -75,21 +82,68 @@ main {
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: repeat(6, 1fr);
         }
+        img{
+          width: 100%;
+        }
         .blue {
-            grid-column: span 6;
+            grid-column: span 8;
+            grid-row: span 6;
         }
         .white {
-            grid-column: span 6;
+            grid-column: span 4;
+            grid-row: span 6;
         }
     }
   }
 
   .whatsnew {
     grid-area: whatsnew;
+
+    ul{
+      display: grid;
+    }
+
+    @include md{
+      grid-template-columns: 350px 350px;
+      grid-gap: 30px;
+      justify-content: center;
+    }
   }
 
   #footer {
     grid-area: footer;
+
+    .socials ul {
+      display: flex;
+    }
+
+    .locations {
+      section ul li {
+        display: grid;
+        grid-template-columns: 20px 200px;
+      }
+    }
+
+    @include md{
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      grid-gap: 50px;
+    }
+
+    .locations {
+      grid-column: 2 / 5;
+      grid-row: 2 / 4;
+    }
+
+    .newsletter {
+      grid-column: 5 / 6;
+      grid-row: 1 / 2;
+
+      .socials {
+        grid-column: 5 / 6;
+      }
+    }
   }
 
   margin-bottom: 24px;

@@ -397,8 +397,14 @@ main .hero a {
 main .nextvisit {
   grid-area: nextvisit;
 }
-main .nextvisit ul {
+main ul {
   display: grid;
+}
+@media (min-width: 768px) {
+  main ul {
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
 }
 main .imggallery {
   grid-area: imggallery;
@@ -411,18 +417,59 @@ main .imggallery ul {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
   }
+  main .imggallery img {
+    width: 100%;
+  }
   main .imggallery .blue {
-    grid-column: span 6;
+    grid-column: span 8;
+    grid-row: span 6;
   }
   main .imggallery .white {
-    grid-column: span 6;
+    grid-column: span 4;
+    grid-row: span 6;
   }
 }
 main .whatsnew {
   grid-area: whatsnew;
 }
+main .whatsnew ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  main .whatsnew {
+    grid-template-columns: 350px 350px;
+    grid-gap: 30px;
+    justify-content: center;
+  }
+}
 main #footer {
   grid-area: footer;
+}
+main #footer .socials ul {
+  display: flex;
+}
+main #footer .locations section ul li {
+  display: grid;
+  grid-template-columns: 20px 200px;
+}
+@media (min-width: 768px) {
+  main #footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 50px;
+  }
+}
+main #footer .locations {
+  grid-column: 2/5;
+  grid-row: 2/4;
+}
+main #footer .newsletter {
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+main #footer .newsletter .socials {
+  grid-column: 5/6;
 }
 @media (min-width: 768px) {
   main {
@@ -485,8 +532,10 @@ p {
 /* =============
     Hero
 ============= */
-.hero img {
-  width: 100%;
+.hero {
+  background: url("../../../deploy/images/campbell-3ZUsNJhi_Ik-unsplash.jpg");
+  width: 100vw;
+  height: 700px;
 }
 .hero ul li {
   display: grid;
@@ -500,6 +549,12 @@ p {
 /* =============
    Imggallery
 ============= */
+.imggallery {
+  background: url("../../../deploy/images/nirmal-rajendharkumar-CiaI7-8TU6Q-unsplash.jpg");
+  background: url("../../../deploy/images/spencer-davis-_1QPm5XQJbA-unsplash.jpg");
+  background: url("../../../deploy/images/michal-mokrzycki-AD6aJvE5yKE-unsplash.jpg");
+  width: 100vw;
+}
 .imggallery ul {
   display: grid;
 }
@@ -513,6 +568,10 @@ p {
 /* =============
     Nextvisit
 ============= */
+.nextvisit {
+  background: url("../../../deploy/images/lambo.png");
+  background: url("../../../deploy/images/gP.png");
+}
 .nextvisit ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -525,6 +584,13 @@ p {
 /* =============
     Whatsnew
 ============= */
+.whatsnew {
+  background: url("../../../deploy/images/craventure-media--il0HyQprwE-unsplash.jpg");
+  background: url("../../../deploy/images/malusi-msomi-Xp__MGsQga8-unsplash.jpg");
+  background: url("../../../deploy/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg");
+  background: url("../../../deploy/images/josh-berquist-PljkQ_KSbMc-unsplash.jpg");
+  background: url("../../../deploy/images/BlueMC.png");
+}
 .whatsnew ul li img {
   width: 100%;
 }
