@@ -549,19 +549,19 @@ p {
 /* =============
    Imggallery
 ============= */
-.imggallery {
+#imggallery {
   background: url("../../../deploy/images/nirmal-rajendharkumar-CiaI7-8TU6Q-unsplash.jpg");
   background: url("../../../deploy/images/spencer-davis-_1QPm5XQJbA-unsplash.jpg");
   background: url("../../../deploy/images/michal-mokrzycki-AD6aJvE5yKE-unsplash.jpg");
   width: 100vw;
 }
-.imggallery ul {
+#imggallery ul {
   display: grid;
 }
-.imggallery ul li img {
+#imggallery ul li img {
   width: 100%;
 }
-.imggallery ul .IG3 {
+#imggallery ul .IG3 {
   display: none;
 }
 
