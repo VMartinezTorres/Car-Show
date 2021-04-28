@@ -1,14 +1,14 @@
 /* =============
     Hero
 ============= */
-.hero{
-    background: url("../../../deploy/images/campbell-3ZUsNJhi_Ik-unsplash.jpg");
-    width: 100vw;
+.hero-img{
+    //background: url("../../../deploy/images/campbell-3ZUsNJhi_Ik-unsplash.jpg");
+   background-color: blueviolet;
+    background-size: cover;
+    background-position: center;
     height: 700px;
-
-
-
-
+    width: 700px;
+}
     ul{
        li{
         display: grid;
@@ -20,4 +20,3 @@
            }
        }
     }
-}

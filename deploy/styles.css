@@ -532,17 +532,20 @@ p {
 /* =============
     Hero
 ============= */
-.hero {
-  background: url("../../../deploy/images/campbell-3ZUsNJhi_Ik-unsplash.jpg");
-  width: 100vw;
+.hero-img {
+  background-color: blueviolet;
+  background-size: cover;
+  background-position: center;
   height: 700px;
+  width: 700px;
 }
-.hero ul li {
+
+ul li {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". hero .";
 }
-.hero ul li a {
+ul li a {
   grid-area: hero;
 }
 
