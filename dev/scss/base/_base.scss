@@ -59,16 +59,24 @@ main {
     grid-area: nextvisit;
   }
 
-    ul {
-      display: grid;
-    }
-  
-    @include md {
-      ul {
-        grid-template-columns: repeat(12, 1fr);
-        grid-gap: 20px;
-      }
-  }
+  ul {
+		display: grid;
+	}
+
+	.plan {
+		display: grid;
+		grid-template-columns: 70% auto;
+	}
+
+	@include md {
+		.plan {
+			grid-template-columns: 400px auto;
+		}
+		ul {
+			grid-template-columns: repeat(12, 1fr);
+			grid-gap: 20px;
+		}
+	}
 
   .imggallery {
     grid-area: imggallery;
@@ -85,11 +93,11 @@ main {
         img{
           width: 100%;
         }
-        .blue {
+        .img1 {
             grid-column: span 8;
             grid-row: span 6;
         }
-        .white {
+        .img2 {
             grid-column: span 4;
             grid-row: span 6;
         }
@@ -98,16 +106,38 @@ main {
 
   .whatsnew {
     grid-area: whatsnew;
+    display: grid;
+    grid-template-columns: 10px auto 10px;
+    grid-template-areas:". whatsnew .";
 
     ul{
+      grid-area: whatsnew;
       display: grid;
-    }
+      grid-gap: 20px;
+      grid-template-rows: repeat(5, 230px);
+      grid-template-areas:
+        "imgg1"
+        "imgg2"
+        "imgg3"
+        "imgg4"
+        "imgg5";
 
-    @include md{
-      grid-template-columns: 350px 350px;
-      grid-gap: 30px;
-      justify-content: center;
-    }
+     @include md {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(3, 300px);
+          grid-template-areas:
+            "imgg1 imgg2"
+            "imgg3 imgg4"
+            "imgg5";
+        }
+
+        @include lg {
+          grid-template-columns: repeat(3, 1fr);
+          grid-template-areas:
+            "imgg1 imgg2 imgg3"
+            "imgg4 imgg5";
+        }
+  }
   }
 
   #footer {
@@ -121,6 +151,7 @@ main {
       section ul li {
         display: grid;
         grid-template-columns: 20px 200px;
+        grid-template-rows: 50px 50px;
       }
     }
 
@@ -133,28 +164,16 @@ main {
 
     .locations {
       grid-column: 2 / 5;
-      grid-row: 2 / 4;
+      grid-row: 1 / 4;
     }
 
     .newsletter {
       grid-column: 5 / 6;
       grid-row: 1 / 2;
+    }
 
-      .socials {
+    .socials {
         grid-column: 5 / 6;
       }
-    }
-  }
-
-  margin-bottom: 24px;
-
-  @include md {
-    background-color: lightgray;
-    margin-bottom: 32px;
-  }
-
-  @include xl {
-    background-color: lightblue;
-    margin-bottom: 64px;
   }
 }

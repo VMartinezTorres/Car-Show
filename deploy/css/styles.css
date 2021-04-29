@@ -365,50 +365,131 @@ ul li {
   list-style: none;
 }
 
-.content {
+main {
   display: grid;
   grid-template-areas: "header" "hero" "nextvisit" "imggallery" "whatsnew" "footer";
-  margin-bottom: 24px;
 }
-.content .header {
+main .header {
   grid-area: header;
 }
-.content .hero {
+main .hero {
   grid-area: hero;
 }
-.content .nextvisit {
+main .hero ul {
+  display: grid;
+}
+main .hero a {
+  display: grid;
+  grid-template-columns: 300px auto;
+}
+@media (min-width: 768px) {
+  main .hero ul {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  main .hero ul .WTB {
+    grid-column: span 5;
+  }
+  main .hero ul .location {
+    grid-column: span 7;
+  }
+}
+main .nextvisit {
   grid-area: nextvisit;
 }
-.content .imggallery {
+main ul {
+  display: grid;
+}
+main .plan {
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+@media (min-width: 768px) {
+  main .plan {
+    grid-template-columns: 400px auto;
+  }
+  main ul {
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+  }
+}
+main .imggallery {
   grid-area: imggallery;
 }
-.content .whatsnew {
-  grid-area: whatsnew;
-}
-.content .whatsnew section {
+main .imggallery ul {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+}
+@media (min-width: 768px) {
+  main .imggallery ul {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+  }
+  main .imggallery img {
+    width: 100%;
+  }
+  main .imggallery .img1 {
+    grid-column: span 8;
+    grid-row: span 6;
+  }
+  main .imggallery .img2 {
+    grid-column: span 4;
+    grid-row: span 6;
+  }
+}
+main .whatsnew {
+  grid-area: whatsnew;
+  display: grid;
+  grid-template-columns: 10px auto 10px;
   grid-template-areas: ". whatsnew .";
 }
-.content .whatsnew section ul {
+main .whatsnew ul {
   grid-area: whatsnew;
   display: grid;
   grid-gap: 20px;
-}
-.content .footer {
-  grid-area: footer;
+  grid-template-rows: repeat(5, 230px);
+  grid-template-areas: "imgg1" "imgg2" "imgg3" "imgg4" "imgg5";
 }
 @media (min-width: 768px) {
-  .content {
-    background-color: lightgray;
-    margin-bottom: 32px;
+  main .whatsnew ul {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 300px);
+    grid-template-areas: "imgg1 imgg2" "imgg3 imgg4" "imgg5";
   }
 }
-@media (min-width: 1200px) {
-  .content {
-    background-color: lightblue;
-    margin-bottom: 64px;
+@media (min-width: 1024px) {
+  main .whatsnew ul {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "imgg1 imgg2 imgg3" "imgg4 imgg5";
   }
+}
+main #footer {
+  grid-area: footer;
+}
+main #footer .socials ul {
+  display: flex;
+}
+main #footer .locations section ul li {
+  display: grid;
+  grid-template-columns: 20px 200px;
+  grid-template-rows: 50px 50px;
+}
+@media (min-width: 768px) {
+  main #footer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 50px;
+  }
+}
+main #footer .locations {
+  grid-column: 2/5;
+  grid-row: 1/4;
+}
+main #footer .newsletter {
+  grid-column: 5/6;
+  grid-row: 1/2;
+}
+main #footer .socials {
+  grid-column: 5/6;
 }
 
 /* =============
@@ -433,20 +514,135 @@ p {
 }
 
 /* =============
-    Footer
-============= */
-/* =============
     Header
 ============= */
+.header {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". header .";
+}
+.header > div {
+  grid-area: header;
+}
+
+/* =============
+    Footer
+============= */
+.footer {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". footer .";
+}
+
 /* =============
     Hero
 ============= */
+.hero-img {
+  background: url("../../../deploy/images/campbell-3ZUsNJhi_Ik-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 700px;
+  width: 100%;
+}
+
+ul li {
+  display: grid;
+  grid-template-columns: 48px auto 48px;
+  grid-template-areas: ". hero .";
+}
+ul li a {
+  grid-area: hero;
+}
+
 /* =============
    Imggallery
 ============= */
+.imggallery {
+  width: 100%;
+}
+.imggallery .image {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.imggallery .img1 {
+  background: url("../../../deploy/images/spencer-davis-_1QPm5XQJbA-unsplash.jpg");
+  height: 700px;
+  width: 100%;
+}
+.imggallery .img2 {
+  background: url("../../../deploy/images/michal-mokrzycki-AD6aJvE5yKE-unsplash.jpg");
+  height: 700px;
+  width: 100%;
+}
+.imggallery .img3 {
+  background: url("../../../deploy/images/nirmal-rajendharkumar-CiaI7-8TU6Q-unsplash.jpg");
+  height: 500px;
+  width: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .imggallery .imggallery {
+    height: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .imggallery .img3 {
+    background: url("../../../deploy/images/nirmal-rajendharkumar-CiaI7-8TU6Q-unsplash.jpg");
+    height: 500px;
+    width: 100%;
+  }
+}
+
 /* =============
     Nextvisit
 ============= */
+.nextvisit .lambo {
+  background: url("../../../deploy/images/lambo.png");
+  background-size: cover;
+}
+.nextvisit .gP {
+  background: url("../../../deploy/images/gP.png");
+  background-size: cover;
+}
+.nextvisit ul li {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+}
+.nextvisit ul li > div {
+  grid-area: nextvisit;
+}
+
 /* =============
     Whatsnew
 ============= */
+.new-image {
+  background-size: cover;
+  width: 350px;
+  height: 180px;
+  margin: 20px;
+}
+
+#imgg1 .new-image {
+  background: url("../../../deploy/images/josh-berquist-PljkQ_KSbMc-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+#imgg2 .new-image {
+  background: url("../../../deploy/images/malusi-msomi-Xp__MGsQga8-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+#imgg3 .new-image {
+  background: url("../../../deploy/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+#imgg4 .new-image {
+  background: url("../../../deploy/images/craventure-media--il0HyQprwE-unsplash.jpg") no-repeat;
+  background-size: cover;
+}
+
+#nimgg5 .new-image {
+  background: url("../../../deploy/images/Blue MC.jpg") no-repeat;
+  background-size: cover;
+}

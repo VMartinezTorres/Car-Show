@@ -1,23 +1,44 @@
 /* =============
    Imggallery
 ============= */
+.imggallery{
+   width: 100%;
+   
+   .image {
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
 
-#imggallery{
-   background: url("../../../deploy/images/nirmal-rajendharkumar-CiaI7-8TU6Q-unsplash.jpg");
-   background: url("../../../deploy/images/spencer-davis-_1QPm5XQJbA-unsplash.jpg");
-   background: url("../../../deploy/images/michal-mokrzycki-AD6aJvE5yKE-unsplash.jpg");
-   width: 100vw;
+      .img1 {
+         background: url("../../../deploy/images/spencer-davis-_1QPm5XQJbA-unsplash.jpg");
+         height: 700px;
+         width: 100%;
 
-   ul{
-      display: grid;
-      li{
-         img{
-            width: 100%
+      }
+      .img2 {
+         background: url("../../../deploy/images/michal-mokrzycki-AD6aJvE5yKE-unsplash.jpg");
+         height: 700px;
+         width: 100%;
+      }
+
+      .img3 {
+         background: url("../../../deploy/images/nirmal-rajendharkumar-CiaI7-8TU6Q-unsplash.jpg");
+         height: 500px;
+         width: 100%;
+         display: none;
+      }
+
+      @include md {
+         .imggallery {
+            height: 700px;
          }
       }
 
-      .IG3{
-         display: none;
+      @include xl {
+         .img3 {
+            background: url("../../../deploy/images/nirmal-rajendharkumar-CiaI7-8TU6Q-unsplash.jpg");
+            height: 500px;
+            width: 100%;
+         }
       }
    }
-}

@@ -34,6 +34,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/images\/Blue MC.jpg" : {
+      "ft" : 16384,
+      "iS" : 35365,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/Blue MC.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/images\/Blue MC.png" : {
       "ft" : 32768,
       "iS" : 123730,
@@ -173,6 +186,19 @@
       "oIPL" : 0,
       "opt" : 0,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/images\/guille-sanchez-DYTd-U7QcfQ-unsplash (2).jpg" : {
+      "ft" : 16384,
+      "iS" : 3276862,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/images\/guille-sanchez-DYTd-U7QcfQ-unsplash (2).jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
@@ -731,7 +757,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/styles.css",
+      "oAP" : "\/deploy\/css\/styles.css",
       "oF" : 2,
       "oS" : 0,
       "pg" : 0,

@@ -1,26 +1,44 @@
 /* =============
     Whatsnew
 ============= */
-.whatsnew{
-    background: url("../../../deploy/images/craventure-media--il0HyQprwE-unsplash.jpg");
-    background: url("../../../deploy/images/malusi-msomi-Xp__MGsQga8-unsplash.jpg");
-    background: url("../../../deploy/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg");
-    background: url("../../../deploy/images/josh-berquist-PljkQ_KSbMc-unsplash.jpg");
-    background: url("../../../deploy/images/BlueMC.png");
+.new-image {
+	background-size: cover;
+	width: 350px;
+	height: 180px;
+	margin: 20px;
+}
 
-    ul{
-       li{
-           img{
-               width: 100%;
-           }
-           section{
-                display: grid;
-                grid-template-columns: 16px auto 16px;
-                grid-template-areas: ". whatsnew .";
-               >div{
-                grid-area: whatsnew;
-               }
-           }
-       }
-    }
+#imgg1 {
+	.new-image {
+		background: url("../../../deploy/images/josh-berquist-PljkQ_KSbMc-unsplash.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
+#imgg2 {
+	.new-image {
+		background: url("../../../deploy/images/malusi-msomi-Xp__MGsQga8-unsplash.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
+#imgg3 {
+	.new-image {
+		background: url("../../../deploy/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
+#imgg4 {
+	.new-image {
+		background: url("../../../deploy/images/craventure-media--il0HyQprwE-unsplash.jpg") no-repeat;
+		background-size: cover;
+	}
+}
+
+#nimgg5 {
+	.new-image {
+		background: url("../../../deploy/images/Blue MC.jpg") no-repeat;
+		background-size: cover;
+	}
 }
