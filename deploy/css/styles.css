@@ -637,6 +637,7 @@ p {
 
 .location a {
   background: #B2BF46;
+  height: 77px;
 }
 .location a:hover {
   background: #919c36;
