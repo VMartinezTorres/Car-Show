@@ -57,26 +57,34 @@ main {
 
   .nextvisit {
     grid-area: nextvisit;
+
+    ul {
+      display: grid;
+    }
+  
+    .plan .content1{
+      display: grid;
+      grid-template-columns: 50% auto;
+    }
+
+    .plan .content2{
+      display: grid;
+      grid-template-columns: 50% auto;
+    }
+  
+    @include md {
+      ul {
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+      .content {
+        display: grid;
+        grid-template-columns: 150px auto;
+      }
+    }
   }
 
-  ul {
-		display: grid;
-	}
-
-	.plan {
-		display: grid;
-		grid-template-columns: 70% auto;
-	}
-
-	@include md {
-		.plan {
-			grid-template-columns: 400px auto;
-		}
-		ul {
-			grid-template-columns: repeat(12, 1fr);
-			grid-gap: 20px;
-		}
-	}
+  
 
   .imggallery {
     grid-area: imggallery;
@@ -95,26 +103,32 @@ main {
         }
         .img1 {
             grid-column: span 8;
-            grid-row: span 6;
+            grid-row: 1 / 6;
         }
         .img2 {
             grid-column: span 4;
             grid-row: span 6;
         }
     }
+    @include lg{
+      .img2 {
+        grid-column: span 4;
+        grid-row: 1 / 3;
+    }
+      .img3 {
+        grid-column: span 4;
+        grid-row: 3 / 6;
+    }
+    }
   }
 
   .whatsnew {
     grid-area: whatsnew;
-    display: grid;
-    grid-template-columns: 10px auto 10px;
-    grid-template-areas:". whatsnew .";
 
     ul{
       grid-area: whatsnew;
       display: grid;
       grid-gap: 20px;
-      grid-template-rows: repeat(5, 230px);
       grid-template-areas:
         "imgg1"
         "imgg2"
@@ -124,56 +138,64 @@ main {
 
      @include md {
           grid-template-columns: repeat(2, 1fr);
-          grid-template-rows: repeat(3, 300px);
           grid-template-areas:
-            "imgg1 imgg2"
-            "imgg3 imgg4"
-            "imgg5";
-        }
+            "imgg1 imgg1 imgg2 imgg2"
+            "imgg3 imgg3 imgg4 imgg4"
+            "imgg5 imgg5";
+      }
 
-        @include lg {
+       @include lg {
           grid-template-columns: repeat(3, 1fr);
           grid-template-areas:
-            "imgg1 imgg2 imgg3"
-            "imgg4 imgg5";
-        }
-  }
+            "imgg1 imgg1 imgg2 imgg2 imgg3 imgg3"
+            "imgg4 imgg4 imgg5 imgg5";
+      }
+    }
   }
 
   #footer {
     grid-area: footer;
 
-    .socials ul {
-      display: flex;
-    }
+    ul {
+      li {
+        display: flex;
+      }
+       }
+       
+       .locations {
+        section ul li {
+          display: grid;
+          grid-template-columns: 20px 200px;
+        }
+      }
+      
+      .socials ul {
+        display: flex;
+      }
 
-    .locations {
-      section ul li {
+      @include md {
         display: grid;
-        grid-template-columns: 20px 200px;
-        grid-template-rows: 50px 50px;
-      }
+       grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: 
+        "locations locations newsletter" 
+        "locations locations socials";
+          
+          .locations {
+            grid-area: locations;
+          }
+        
+          .newsletter {
+            grid-area: newsletter;
+          }
+        
+          .socials {
+            grid-area: socials;
+          }
+       }
+        
+        @include lg {
+          grid-template-areas:
+          "locations  newsletter socials";
+        }
     }
-
-    @include md{
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      grid-template-rows: repeat(6, 1fr);
-      grid-gap: 50px;
-    }
-
-    .locations {
-      grid-column: 2 / 5;
-      grid-row: 1 / 4;
-    }
-
-    .newsletter {
-      grid-column: 5 / 6;
-      grid-row: 1 / 2;
-    }
-
-    .socials {
-        grid-column: 5 / 6;
-      }
-  }
 }

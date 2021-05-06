@@ -10,16 +10,32 @@
         background: url("../../../deploy/images/gP.png");
         background-size: cover;
     }
-    ul{
-       li{
-        display: grid;
-        grid-template-columns: 16px auto 16px;
-        
-          
-        >div{
-            grid-area: nextvisit;
-        
-           }
-       }
+    
+    .content1 {
+        margin: 20px auto;
+        padding: 20px;
+        background: $stonegraydark;
+     }
+     .content2 {
+        margin: 20px auto;
+        padding: 20px;
+        background: $stonegray;
+     }
+
+    .details  {
+        color: white;
+        padding: 20px;
     }
-}
+
+    button {
+        background: $limeneon;
+        padding: 10px 20px;
+        border: none;
+
+        &:hover {
+            background: darken($limeneon, 20%);
+        }
+    }
+ }
+
+       

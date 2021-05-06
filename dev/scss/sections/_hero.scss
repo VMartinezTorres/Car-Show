@@ -7,15 +7,36 @@
     background-position: center;
     height: 700px;
     width: 100%;
-}
+
     ul{
-       li{
-        display: grid;
-        grid-template-columns: 48px auto 48px;
-        grid-template-areas: ". hero .";
-          
-        a{
-            grid-area: hero;
-           }
-       }
+        li{
+         display: grid;
+         grid-template-columns: 16px auto 16px;
+         grid-template-areas: ". hero .";
+           
+         a{
+             grid-area: hero;
+            }
+        }
+     }
+}
+
+.details a {
+    color: white;
+    padding: 20px;
+}
+
+.WTB a {
+    background: $limeneondark;
+    &:hover {
+     background: darken($limeneondark, 10%);
     }
+ }
+   
+.location a {
+    background: $limeneon;
+    &:hover {
+        background: darken($limeneon, 10%);
+    }
+}
+    

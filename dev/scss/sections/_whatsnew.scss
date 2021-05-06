@@ -3,15 +3,34 @@
 ============= */
 .new-image {
 	background-size: cover;
-	width: 350px;
-	height: 180px;
-	margin: 20px;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	//width: 500px;
+	height: 200px;
+	padding: 20px;
 }
+
+.new-content {
+	background: $stonegraylight;
+
+	.new-content {
+		padding: 0 30px 30px;
+	}
+
+	button {
+		background: $limeneon;
+		border: none;
+		padding: 5px 10px;
+		margin: 10px;
+	}
+} 
 
 #imgg1 {
 	.new-image {
 		background: url("../../../deploy/images/josh-berquist-PljkQ_KSbMc-unsplash.jpg") no-repeat;
 		background-size: cover;
+		background-position: center;
+		
 	}
 }
 
@@ -19,6 +38,7 @@
 	.new-image {
 		background: url("../../../deploy/images/malusi-msomi-Xp__MGsQga8-unsplash.jpg") no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 }
 
@@ -26,6 +46,7 @@
 	.new-image {
 		background: url("../../../deploy/images/joshua-koblin-eqW1MPinEV4-unsplash.jpg") no-repeat;
 		background-size: cover;
+		background-position: center;
 	}
 }
 
@@ -36,7 +57,7 @@
 	}
 }
 
-#nimgg5 {
+#imgg5 {
 	.new-image {
 		background: url("../../../deploy/images/Blue MC.jpg") no-repeat;
 		background-size: cover;

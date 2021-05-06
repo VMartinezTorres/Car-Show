@@ -1,8 +1,55 @@
 /* =============
     Footer
 ============= */
-.footer{
+#footer{
     display: grid;
-    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
+
+    >div {
+        grid-area: footer;
+    }
+
+    background: $ashgraydark;
+    width: 100%;
+    margin: 20px auto 0;
+
+
+    .icon {
+        color: $royaltanlight;
+    }
+    h4 {
+        color: white;
+    }
+    h6 {
+        color: $limeneon;
+    }
+    .address {
+        color: $limeneonlight;
+        a {
+            color: $limeneonlight;
+        }
+    }
+
+    button {
+		background: $limeneon;
+		border: none;
+		padding: 5px 10px;
+		margin: 10px;
+	}
+
+
+
+    .newsletter {
+        form input {
+            padding: 10px 30px;
+        }
+    }
+
+    .socials a {
+        color: white;
+        padding: 0 10px 0 0;
+    }
+
+
+   
 }
