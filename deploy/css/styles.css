@@ -367,10 +367,65 @@ ul li {
 
 main {
   display: grid;
-  grid-template-areas: "header" "hero" "nextvisit" "imggallery" "whatsnew" "footer";
+  grid-template-areas: "header" "search" "hero" "nextvisit" "imggallery" "whatsnew" "footer";
 }
 main .header {
   grid-area: header;
+}
+main .Heading {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". heading .";
+  background-color: white;
+}
+@media (min-width: 1200px) {
+  main .Heading {
+    grid-template-columns: auto 1000px auto;
+  }
+}
+main .Heading > div {
+  grid-area: heading;
+}
+main .Heading > div form {
+  text-align: right;
+  border-color: none;
+}
+main .Heading > div input {
+  background-color: white;
+  border: none;
+  color: #6F4528;
+  font-size: 0.875rem;
+  font-weight: 200;
+}
+@media (min-width: 768px) {
+  main .Heading > div {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .Heading > div {
+    font-size: 1.5625rem;
+  }
+}
+@media (min-width: 1200px) {
+  main .Heading > div {
+    font-size: 1.875rem;
+  }
+}
+main .Heading .search {
+  height: 70px;
+  margin: 30px 10px 0;
+}
+main .Heading .search form input {
+  border: none;
+  border-bottom: 1px solid #6F4528;
+  padding: 5px;
+}
+main .Heading .search form button {
+  background: #B2BF46;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
 }
 main .hero {
   grid-area: hero;
@@ -575,6 +630,16 @@ p {
 #footer > div {
   grid-area: footer;
 }
+#footer .address {
+  line-height: 1.5;
+  border-bottom: 1px solod #B2BF46;
+  padding-bottom: 20px;
+}
+#footer .address a {
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: #B2BF46;
+}
 #footer .icon {
   color: #CABDB4;
 }
@@ -586,18 +651,19 @@ p {
 }
 #footer .address {
   color: #E3EC99;
+  font-size: 0.75rem;
 }
 #footer .address a {
   color: #E3EC99;
 }
-#footer button {
+#footer .newsletter form input {
+  padding: 10px 30px;
+}
+#footer .newsletter button {
   background: #B2BF46;
   border: none;
   padding: 5px 10px;
   margin: 10px;
-}
-#footer .newsletter form input {
-  padding: 10px 30px;
 }
 #footer .socials a {
   color: white;

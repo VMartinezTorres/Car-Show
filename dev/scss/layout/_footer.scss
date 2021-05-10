@@ -13,6 +13,17 @@
     width: 100%;
     margin: 20px auto 0;
 
+    .address{
+        line-height: 1.5;
+        border-bottom: 1px solod $limeneon;
+        padding-bottom: 20px;
+        a{
+            font-size: rem-calc(12);
+            text-decoration: none;
+            color: $limeneon;
+        }
+    }
+
 
     .icon {
         color: $royaltanlight;
@@ -25,23 +36,22 @@
     }
     .address {
         color: $limeneonlight;
+        font-size: rem-calc(12);
         a {
             color: $limeneonlight;
         }
     }
 
-    button {
-		background: $limeneon;
-		border: none;
-		padding: 5px 10px;
-		margin: 10px;
-	}
-
-
-
     .newsletter {
         form input {
             padding: 10px 30px;
+        }
+
+        button {
+            background: $limeneon;
+            border: none;
+            padding: 5px 10px;
+            margin: 10px;
         }
     }
 
